@@ -1,19 +1,19 @@
-package lk.automobile.spring.dto;
+package lk.automobile.spring.entity;
 
 /**
  * author  Yasith C Bandara
- * created 1/18/2023 - 6:04 PM
+ * created 1/18/2023 - 7:58 PM
  * project Automobile-Service-WebApp
  */
 
-public class CustomerDTO {
+public class Customer {
     private String name;
     private String address;
     private String email;
     private String dlNo;
     private String nicNo;
 
-    public CustomerDTO(String name, String address, String email, String dlNo, String nicNo) {
+    public Customer(String name, String address, String email, String dlNo, String nicNo) {
         this.name = name;
         this.address = address;
         this.email = email;
@@ -63,7 +63,7 @@ public class CustomerDTO {
 
     @Override
     public String toString() {
-        return "CustomerDTO{" +
+        return "Customer{" +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", email='" + email + '\'' +
